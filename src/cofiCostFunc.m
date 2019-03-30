@@ -21,5 +21,10 @@ Error = Error .* R;
 % sum the squared errors
 J = (0.5) * sum(sum(Error .^ 2));
 
+% compute grad
+gradX = (Error * Theta);
+gradTheta = (Error' * X);
+grad = [gradX(:); gradTheta(:)];
+
 
 end                 
