@@ -27,6 +27,11 @@ J += (lambda / 2) * (sum(params .^ 2));
 % compute grad
 gradX = (Error * Theta);
 gradTheta = (Error' * X);
+
+% regularization
+gradX += lambda * X;
+gradTheta += lambda * Theta;
+
 grad = [gradX(:); gradTheta(:)];
 
 
