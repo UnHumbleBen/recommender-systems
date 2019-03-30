@@ -16,3 +16,7 @@ J = cofiCostFunc([X(:) ; Theta(:)], Y, R, num_users, ...
 
 printf("Cost at loaded parameters: %f\n", J);
 printf("Expected cost            : 22.22\n");
+
+%% Testing gradient
+printf("Checking gradient (without regularization) ... \n");
+checkCostFunction;
