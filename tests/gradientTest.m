@@ -20,3 +20,9 @@ printf("Expected cost            : 22.22\n");
 %% Testing gradient
 printf("Checking gradient (without regularization) ... \n");
 checkCostFunction;
+
+%% Regularization
+J = cofiCostFunc([X(:) ; Theta(:)], Y, R, num_users, ...
+                 num_movies, num_features, 1.5);
+printf("Cost at loaded parameters (lambda = 1.5): %f\n", J);
+printf("Expected cost                           : 31.34\n");                
