@@ -31,7 +31,7 @@ Otherwise, ```R(i, j) = 0```.
 The script in **tests/visualizeData.m** helps us visualize ```Y``` by
 by computing the average movie rating for the first movie and outputting
 the average rating to the screen. It also plots ```Y``` as colored image.
-(See figure below)
+![Y dataset](figures/ratings.jpg)
 
 
 
@@ -55,7 +55,7 @@ which is also the number of dimensions in the dataset.
 ```Theta(j)``` is the parameter vector for the *jth* user.
 ```Theta(j, k)``` is the *kth* parameter for the *jth* user's paramemter vector.
 
-![Y dataset](figures/ratings.jpg)
+
 
 ## Collaborative filtering learning algorithm
 ### Collaborative filtering cost function
