@@ -27,8 +27,11 @@ The matrix ```R``` has the same dimensions as ```Y```
 
 * ```R(i, j) = 1``` if the *ith* movie was rated by the *jth* user.
 Otherwise, ```R(i, j) = 0```.
-We can visualize the matrix ```Y``` by computing the average movie rating
-for the first movie and outputting the average rating to the screen.
+
+The script in **tests/visualizeData.m** helps us visualize ```Y``` by
+by computing the average movie rating for the first movie and outputting
+the average rating to the screen. It also plots ```Y``` as colored image.
+(See figure below)
 
 
 
@@ -51,6 +54,8 @@ which is also the number of dimensions in the dataset.
 * ```Theta``` is a ```num_users``` *x* ```num_features``` matrix.
 ```Theta(j)``` is the parameter vector for the *jth* user.
 ```Theta(j, k)``` is the *kth* parameter for the *jth* user's paramemter vector.
+
+![Y dataset](figures/ratings.jpg)
 
 ## Collaborative filtering learning algorithm
 ### Collaborative filtering cost function
