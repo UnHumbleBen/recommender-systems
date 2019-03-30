@@ -58,6 +58,18 @@ which is also the number of dimensions in the dataset.
 
 
 ## Collaborative filtering learning algorithm
+The function ```cofiCostFunc()``` in **src/cofiCostFunc** takes in the parameters
+```params```, ```Y```, ```R```, ```num_users```, ```num_movies```, ```num_features```
+and ```lambda``` and returns ```[J, grad]```.
+* Arguments
+  * ```Y```, ```R```, ```num_users```, ```num_movies```, ```num_features``` are defined
+  the same as they are earlier.
+  * ```params``` is a unrolled vector containing ```X``` and ```Theta```. This allows
+  us to use packaged minimizers such as ```fmincg```.
+* Return values
+  * ```J``` is the cost
+  * ```grad``` is the gradient
+
 ### Collaborative filtering cost function
 ### Collaborative filtering gradient
 ### Regularized cost function
