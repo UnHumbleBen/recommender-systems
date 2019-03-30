@@ -58,7 +58,7 @@ which is also the number of dimensions in the dataset.
 
 
 ## Collaborative filtering learning algorithm
-The function ```cofiCostFunc()``` in **src/cofiCostFunc** takes in the parameters
+The function ```cofiCostFunc()``` in **src/cofiCostFunc.m** takes in the parameters
 ```params```, ```Y```, ```R```, ```num_users```, ```num_movies```, ```num_features```
 and ```lambda``` and returns ```[J, grad]```.
 * Arguments
