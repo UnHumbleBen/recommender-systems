@@ -16,7 +16,7 @@ The binary file **data/movies.mat** contains the variables ```Y```
 and ```R```. 
 
 
-Let ```num_movies``` be the number of rows in ```Y```
+* Let ```num_movies``` be the number of rows in ```Y```
 , which is also the number of movies,
 and ```num_users``` be the number of columns in ```Y```
 , which is also the number of users.
@@ -25,7 +25,7 @@ on the *ith* movie given by user *j*.
 The matrix ```R``` has the same dimensions as ```Y```
 (also ```num_movies``` *x* ```num_users```). 
 
-```R(i, j) = 1``` if the *ith* movie was rated by the *jth* user.
+* ```R(i, j) = 1``` if the *ith* movie was rated by the *jth* user.
 Otherwise, ```R(i, j) = 0```.
 We can visualize the matrix ```Y``` by computing the average movie rating
 for the first movie and outputting the average rating to the screen.
@@ -38,17 +38,17 @@ The binary file **data/movieParams.mat** contains the variables
 ```num_features```. 
 
 
-```num_movies``` and ```num_users``` are the same as the
+* ```num_movies``` and ```num_users``` are the same as the
 variables defined earlier. 
 
-```num_features``` is the number of columns in ```X```,
+* ```num_features``` is the number of columns in ```X```,
 which is also the number of dimensions in the dataset.
 
-```X``` is a ```num_movies``` *x* ```num_features``` matrix.
+* ```X``` is a ```num_movies``` *x* ```num_features``` matrix.
 ```X(i)``` is the feature vector for the *ith* movie.
 ```X(i, k)``` is the *kth* feature of the *ith* movie's feature vector.
 
-```Theta``` is a ```num_users``` *x* ```num_features``` matrix.
+* ```Theta``` is a ```num_users``` *x* ```num_features``` matrix.
 ```Theta(j)``` is the parameter vector for the *jth* user.
 ```Theta(j, k)``` is the *kth* parameter for the *jth* user's paramemter vector.
 
