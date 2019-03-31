@@ -6,7 +6,7 @@ Implementing and applying the collaborative filtering learning algorithm to a da
 * [Collaborative filtering learning algorithm](#collaborative-filtering-learning-algorithm)
 * [Learning movie recommendations](#learning-movie-recommendations)
   * [Recommendations](#recommendations)
-* [To-Do](#to/-do)
+* [To-Do](#to\-do)
 
 ## Movie ratings dataset
 The binary file **data/movies.mat** contains the variables ```Y```
