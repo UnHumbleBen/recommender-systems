@@ -1,0 +1,11 @@
+ratings(1)  = 4;
+ratings(98) = 2;
+ratings(7) = 3;
+ratings(12)= 5;
+ratings(54) = 4;
+ratings(64)= 5;
+ratings(66)= 3;
+ratings(69) = 5;
+ratings(183) = 4;
+ratings(226) = 5;
+ratings(355)= 5;
