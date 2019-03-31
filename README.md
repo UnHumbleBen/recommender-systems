@@ -93,20 +93,20 @@ Rated 5 for Die Hard 2 (1990)
 Rated 5 for Sphere (1998)
 
 Top recommendations for you:
-Predicting rating 5.0 for movie Aiqing wansui (1994)
-Predicting rating 5.0 for movie Someone Else's America (1995)
-Predicting rating 5.0 for movie Great Day in Harlem, A (1994)
-Predicting rating 5.0 for movie Marlene Dietrich: Shadow and Light (1996)
-Predicting rating 5.0 for movie Prefontaine (1997)
-Predicting rating 5.0 for movie They Made Me a Criminal (1939)
-Predicting rating 5.0 for movie Star Kid (1997)
-Predicting rating 5.0 for movie Santa with Muscles (1996)
-Predicting rating 5.0 for movie Entertaining Angels: The Dorothy Day Story (1996)
-Predicting rating 5.0 for movie Saint of Fort Washington, The (1993)
+Predicting rating 4.6 for movie Star Wars (1977)
+Predicting rating 4.6 for movie Shawshank Redemption, The (1994)
+Predicting rating 4.5 for movie Maya Lin: A Strong Clear Vision (1994)
+Predicting rating 4.5 for movie Close Shave, A (1995)
+Predicting rating 4.5 for movie Schindler's List (1993)
+Predicting rating 4.5 for movie Wrong Trousers, The (1993)
+Predicting rating 4.5 for movie Titanic (1997)
+Predicting rating 4.5 for movie Raiders of the Lost Ark (1981)
+Predicting rating 4.5 for movie Wallace & Gromit: The Best of Aardman Animation (1996)
+Predicting rating 4.5 for movie Empire Strikes Back, The (1980)
 ```
 
 ## To-Do
 - [ ] improve consistency
   - [ ] tweak regularization parameter
-  - [ ] get rid of movies with low reviews
+  - [X] get rid of movies with low reviews
   - [ ] others...?
