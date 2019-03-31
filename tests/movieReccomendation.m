@@ -55,7 +55,9 @@ f = @(t)(cofiCostFunc(t, Ynorm, R, num_users, num_movies, num_features, lambda))
 theta = fmincg(f, initial_parameters, options);
 
 printf("Recommender system learning completed...\n");
-
+X = reshape(theta(1:num_movies*num_features), num_movies, num_features);
+Theta = reshape(theta(num_movies*num_features+1:end), ...
+                num_users, num_features);
 
 %% Get recommendations
 p = X * Theta';
