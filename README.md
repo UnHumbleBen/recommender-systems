@@ -6,6 +6,7 @@ Implementing and applying the collaborative filtering learning algorithm to a da
 * [Collaborative filtering learning algorithm](#collaborative-filtering-learning-algorithm)
 * [Learning movie recommendations](#learning-movie-recommendations)
   * [Recommendations](#recommendations)
+* [To-Do](#to/-do)
 
 ## Movie ratings dataset
 The binary file **data/movies.mat** contains the variables ```Y```
@@ -103,3 +104,9 @@ Predicting rating 5.0 for movie Santa with Muscles (1996)
 Predicting rating 5.0 for movie Entertaining Angels: The Dorothy Day Story (1996)
 Predicting rating 5.0 for movie Saint of Fort Washington, The (1993)
 ```
+
+## To-Do
+- [ ] improve consistency
+  - [ ] tweak regularization parameter
+  - [ ] get rid of movies with low reviews
+  - [ ] others...?
