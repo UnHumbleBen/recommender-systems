@@ -68,4 +68,12 @@ and ```lambda``` and returns ```[J, grad]```.
   * ```grad``` is the gradient
 
 ## Learning movie recommendations
+The script in **tests/movieReccomendation.m** generates some movie preferences (feel
+free to modify them as you see fit). The list of all movies and their numbers can be
+found in **data/movie_idx.txt**. 
 ### Recommendations
+The script in **tests/movieReccomendations.m** trains the collaborative filtering model,
+learning ```X``` and ```Theta```. ```Theta(j,:) * X(i, :)'``` predicts the rating for
+*ith* movie from user *j*. The script computes the ratings for all the movies and users
+and displays the movies that it reccommends.
+(Figure to be added later).
