@@ -72,8 +72,34 @@ The script in **tests/movieReccomendation.m** generates some movie preferences (
 free to modify them as you see fit). The list of all movies and their numbers can be
 found in **data/movie_idx.txt**. 
 ### Recommendations
-The script in **tests/movieReccomendations.m** trains the collaborative filtering model,
+The script in **tests/movieRecommendations.m** trains the collaborative filtering model,
 learning ```X``` and ```Theta```. ```Theta(j,:) * X(i, :)'``` predicts the rating for
 *ith* movie from user *j*. The script computes the ratings for all the movies and users
 and displays the movies that it reccommends.
-(Figure to be added later).
+* Sample run:
+```
+New user ratings:
+Rated 4 for Toy Story (1995)
+Rated 3 for Twelve Monkeys (1995)
+Rated 5 for Usual Suspects, The (1995)
+Rated 4 for Outbreak (1995)
+Rated 5 for Shawshank Redemption, The (1994)
+Rated 3 for While You Were Sleeping (1995)
+Rated 5 for Forrest Gump (1994)
+Rated 2 for Silence of the Lambs, The (1991)
+Rated 4 for Alien (1979)
+Rated 5 for Die Hard 2 (1990)
+Rated 5 for Sphere (1998)
+
+Top recommendations for you:
+Predicting rating 5.0 for movie Aiqing wansui (1994)
+Predicting rating 5.0 for movie Someone Else's America (1995)
+Predicting rating 5.0 for movie Great Day in Harlem, A (1994)
+Predicting rating 5.0 for movie Marlene Dietrich: Shadow and Light (1996)
+Predicting rating 5.0 for movie Prefontaine (1997)
+Predicting rating 5.0 for movie They Made Me a Criminal (1939)
+Predicting rating 5.0 for movie Star Kid (1997)
+Predicting rating 5.0 for movie Santa with Muscles (1996)
+Predicting rating 5.0 for movie Entertaining Angels: The Dorothy Day Story (1996)
+Predicting rating 5.0 for movie Saint of Fort Washington, The (1993)
+```
