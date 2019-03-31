@@ -8,7 +8,7 @@ addpath("../lib");
 movieList = loadMovieList();
 
 %% Get your movie ratings
-ratings = zeros(1682, 1);
+ratings = zeros(500, 1);
 getMovieRatings;
 
 printf("New user ratings:\n");
@@ -23,6 +23,11 @@ printf("\nTraining collaborative filtering...\n");
 printf("Loading dataset...\n");
 load("../data/movies.mat");
 printf("Adding new user rating to data matrix...\n");
+
+Y = Y(1:500,:);
+R = R(1:500,:);
+
+
 Y = [ratings Y];
 R = [(ratings ~= 0) R];
 
