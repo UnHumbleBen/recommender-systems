@@ -22,6 +22,9 @@ endfor
 printf("\nTraining collaborative filtering...\n");
 printf("Loading dataset...\n");
 load("../data/movies.mat");
+printf("Adding new user rating to data matrix...\n");
+Y = [ratings Y];
+R = [(ratings ~= 0) R];
 
 printf("Normalizing ratings...\n");
 [Ynorm, Ymean] = normalizeRatings(Y, R);
@@ -52,3 +55,20 @@ f = @(t)(cofiCostFunc(t, Ynorm, R, num_users, num_movies, num_features, lambda))
 theta = fmincg(f, initial_parameters, options);
 
 printf("Recommender system learning completed...\n");
+
+
+%% Get recommendations
+p = X * Theta';
+predictions = p(:, 1) + Ymean;
+
+%% Sort ratings in descending order
+% r contains the sorted predictions
+% ix contains the index of the corresponding element in r
+[r, ix] = sort(predictions, "descend");
+printf("\nTop recommendations for you:\n");
+for i=1:10
+    j = ix(i);
+    name = movieList{j};
+    rating = r(i);
+    printf("Predicting rating %.1f for movie %s\n", predictions(j), name);
+endfor
