@@ -3,6 +3,7 @@ clear;
 close all;
 clc;
 addpath("../src");
+addpath("../lib");
 
 movieList = loadMovieList();
 
@@ -35,3 +36,19 @@ printf("Initializing random parameters...\n");
 % zero mean and variance one.
 X = randn(num_movies, num_features);
 Theta = randn(num_users, num_features);
+
+initial_parameters = [X(:); Theta(:)];
+
+%% option structure for fmincg
+% "GradObj" "on" indicates we provide a gradient function
+% "MaxIter" 100 specifies maximum number of iterations
+options = optimset("GradObj", "on", "MaxIter", 100);
+
+% Set regularization
+lambda = 10;
+printf("Minimizing cost function...\n");
+% function handler
+f = @(t)(cofiCostFunc(t, Ynorm, R, num_users, num_movies, num_features, lambda));
+theta = fmincg(f, initial_parameters, options);
+
+printf("Recommender system learning completed...\n");
