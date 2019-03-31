@@ -108,5 +108,5 @@ Predicting rating 4.5 for movie Empire Strikes Back, The (1980)
 ## To-Do
 - [ ] improve consistency
   - [ ] tweak regularization parameter
-  - [X] get rid of movies with low reviews
+  - [X] get rid of movies with low number of reviews
   - [ ] others...?
